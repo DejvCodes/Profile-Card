@@ -1,0 +1,147 @@
+/* ---------- Import Google Fonts ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=wrap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5E2AFA;
+    background: linear-gradient(0deg, #5E2AFA 0%, #0FC7E7 100%);
+}
+.container {
+    position: relative;
+    max-width: 340px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    background: #5E2AFA;
+    top: 0;
+    left: 0;
+    height: 35%;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+/* ---------- DejvCodes - Image ---------- */
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: #5E2AFA;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+/* ---------- DejvCodes - Personal Info ---------- */
+.container .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.personal-info .name {
+    font-size: 25px;
+    font-weight: 500;
+}
+.personal-info .employment {
+    font-size: 20px;
+    font-weight: 400;
+}
+/* ---------- DejvCodes - Social Media ---------- */
+.container .social-media { 
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+}
+.container .social-media .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #5E2AFA;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+.container .social-media .link:hover {
+    transform: translateY(-3px);
+}
+/* ---------- DejvCodes - Buttons ---------- */
+.container .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttons .btn {
+    border: none;
+    color: #fff;
+    background: #5E2AFA;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 25px;
+    margin: 0 5px;  
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.buttons .btn:hover {
+    transform: scale(1.05);
+}
+/* ---------- DejvCodes - Analytics ---------- */
+.container .analytics {
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+}
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #E7E7E7;
+}
+.data i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.data:last-child {
+    border: none;
+}
+
+/* ---------- Responsive ---------- */
+@media only screen and (max-width: 390px) {
+    body {
+        padding: 0 10px;
+    }
+}
