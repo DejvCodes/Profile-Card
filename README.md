@@ -13,4 +13,4 @@
 <a href="https://profile-card-dejvcodes.netlify.app/">Profile Card - DejvCodes</a>
 
 ## License🔐
-[MIT License](LICENSE) 
+[MIT License](LICENSE)
